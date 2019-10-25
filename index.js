@@ -3,7 +3,6 @@
 // За эти или иные действия отвечают переменные самого инстанса, например health, happiness и так далее...
 
 class Tamagotchi {
-
     constructor(name) {
         this.name = name;
         this.health = 40;
@@ -19,7 +18,6 @@ class Tamagotchi {
         let myAge = setInterval(()=>{
             this.age ++;
             console.log("alive ",this.age,' seconds');
-
             if(this.age>10){
                 this.dead=true;
                 console.log('I AM DEAD');
@@ -57,7 +55,6 @@ class Tamagotchi {
             this.happynes += game;
             console.log('Pit happynes: ' + this.happynes);
         }
-
     }
 
     sleep(hours){
@@ -99,8 +96,3 @@ tamagotchi.play(game);
 tamagotchi.walk(5);
 tamagotchi.doctor(tablet);
 tamagotchi.bye();
-
-
-
-
-
